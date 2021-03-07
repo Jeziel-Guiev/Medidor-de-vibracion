@@ -1,0 +1,21 @@
+extends layout/layout.pug
+
+block content
+  h1.title iotnode-Detector de Vibraciones
+  .container
+    .row
+      div.col-6-chart 
+            canvas.embed-responsive-item(id="line-chart" width="500" height="400")
+      div.col-6-chart 
+            canvas.embed-responsive-item(id="line-chart2" width="500" height="400")
+  h1.sd Muestra completa
+      div.col-6-chart 
+            canvas.embed-responsive-item(id="line-chart3" width="500" height="400")
+  h2.tenedor(id="temperature" class="display-1 p-4")
+       fieldset  
+          legend Actualizar base de datos
+            br
+            br
+            input.folder(type="button", id='boton',value='Update') 
+          div.mostrar
+            h1.folder(id='resultado' class="display-1 p-4")

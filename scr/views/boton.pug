@@ -1,0 +1,17 @@
+extends layout/layout.pug
+
+block content
+  script(src='/socket.io/socket.io.js')
+  script(src='/script/boton.js') 
+  h1.title Boton Script
+   fieldset 
+    legend botonos
+        br
+        input.btn-info(type="text", id='numero1')
+        br
+        input.btn-info(type="text", id='numero2')
+        br
+        input.folder(type="button", id='boton',value='Calcular') 
+    div.mostrar
+        h1.folder(id='resultado' class="display-1 p-4")
+  
