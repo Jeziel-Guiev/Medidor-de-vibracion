@@ -11,11 +11,11 @@ var valores=[0,0,0];
 function Mqtt(callback){
   var mqtt=require('mqtt');
 
-var client= mqtt.connect('');
-var clientX=mqtt.connect('');
-var clientY=mqtt.connect('');
-var clientZ=mqtt.connect('');
-var clientT=mqtt.connect('');
+var client= mqtt.connect('128.199.14.19');
+var clientX=mqtt.connect('128.199.14.19');
+var clientY=mqtt.connect('128.199.14.19');
+var clientZ=mqtt.connect('128.199.14.19');
+var clientT=mqtt.connect('128.199.14.19');
 
 
 client.on('connect', async function () {
